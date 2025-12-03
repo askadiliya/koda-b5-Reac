@@ -2,6 +2,7 @@ import ShowProducts from "../components/ShowProducts";
 import AddProduct from "../components/AddProduct";
 import ShowProduct from "../components/ShowProducts";
 import { useState } from "react";
+import Navigasi from "../components/Navigasi";
 // import "../styles/App.css";
 
 function Products() {
@@ -11,9 +12,7 @@ function Products() {
 
   return (
     <div>
-      <header className="text-center text-2xl w-screen pt-2 bg-amber-300">
-        Product App
-      </header>
+      <Navigasi/>
       <main className="flex min-h-[85vh] p-5">
         <ShowProducts products={products} />
         <AddProduct changeProducts={setProducts} />
