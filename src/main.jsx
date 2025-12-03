@@ -4,11 +4,17 @@ import { createRoot } from "react-dom/client";
 // import Counter from "./pages/Counter";
 import Products from "./pages/Products";
 import Characters from "./pages/Characters";
+import { BrowserRouter } from "react-router";
+import Router from "./Router";
+import Home from "./pages/Home";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <Counter /> */}
     {/* <Products /> */}
-    <Characters/>
+    {/* <Characters/> */}
+    <BrowserRouter>
+      <Router/>
+    </BrowserRouter>
   </StrictMode>
 );
